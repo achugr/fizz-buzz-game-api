@@ -4,7 +4,7 @@ $(document).ready(function () {
         getQuestionAndAnswer();
 
         function getAnswer() {
-            $.post("/games/fizzBuzz/getAnswer",
+            $.post("/api/games/fizzBuzz/getAnswer",
                 {
                     'question': $("#playInput").val()
                 }
@@ -14,7 +14,7 @@ $(document).ready(function () {
         }
 
         function getQuestionAndAnswer() {
-            $.get("/games/fizzBuzz/getQuestionAndAnswer?bound=" + $('#boundVal').val()
+            $.get("/api/games/fizzBuzz/getQuestionAndAnswer?bound=" + $('#boundVal').val()
             ).done(function (data) {
                 console.log(data);
                 questionAnswer = data;

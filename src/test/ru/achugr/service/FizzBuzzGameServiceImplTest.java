@@ -45,7 +45,7 @@ public class FizzBuzzGameServiceImplTest {
     }
 
     @Test
-    public void testPlay() throws Exception {
-        assertThat(fizzBuzzGameService.play(inputStr), is(equalTo(outputStr)));
+    public void testAnswer() throws Exception {
+        assertThat(fizzBuzzGameService.answer(inputStr), is(equalTo(outputStr)));
     }
 }
